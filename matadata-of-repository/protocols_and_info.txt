@@ -1,0 +1,23 @@
+naming protocol:
+    =>name every poisible element 
+    =>name a element as its work in the website ex:header_body
+    =>for naming child in a class it should be like <parentname>_<chidname> follow camel casing
+        ex: headerNav_atag
+    
+
+structure protocol:
+    =>after implementing a code give a basic outline of the  elemets  that are used in that  piece  of code with there name .wirte this info in comment section above the starting of that piece of code 
+        ex:  /*home_sec
+                {
+                    nav{
+                        a_tag{
+
+                        }
+                    }
+                }
+                */
+
+
+basic protocol:
+    =>first make a basic layout of the ui that u want to implement 
+    =>make that layout responsive first and then insert the content 

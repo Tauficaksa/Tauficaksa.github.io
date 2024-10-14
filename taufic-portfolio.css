@@ -296,7 +296,7 @@ strong{
 
 .video_sec{
   
-  border: 2px outset white;
+  /* border: 2px outset white; */
   margin-left: 5%;
   margin-right: 5%;
 
@@ -330,6 +330,10 @@ strong{
  @media screen and (max-width:1200px) {
     .aboutSecBody_imgSide_div{
       display: none;
+    }
+
+    .video_sec{
+      /* border: 2px outset white; */
     }
  }
 

@@ -310,6 +310,141 @@ strong{
   width: 90%;
 }
 
+/*------end of video sec ------------*/
+
+/*------start of skill sec -----------*/
+
+.skill_sec{
+  border: 2px outset white;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100dvh;
+  /* overflow-y: scroll; */
+}
+
+.skillSec_header{
+  /* border: 2px outset white; */
+  color: var(--white_default);
+
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+}
+
+.skillSec_header h1{
+  font-size: 40px ;
+  font-family: var(--font_style);
+  font-weight: 100;
+}
+
+.skillSec_header strong{
+  color: var(--green_decorator);
+  font-weight: 100;
+}
+
+.skillSec_body{
+
+  /* background-color:bisque; */
+
+  height: 90dvh;
+  display: flex;
+  
+}
+.skillSecBody_mobile_part{
+  
+  /* background-color: aqua; */
+
+  flex: 1;
+
+  display: flex;
+  justify-content:end;
+  align-items:center;
+}
+
+/* .T_mobilePart_container{
+  background-color: aliceblue;
+  width: 320px;
+  margin-right: 20px;
+} */
+
+.T_mobilePartContainer_mobile_case{
+  background-color: #b4b6b8;
+  width: 320px;
+  height: 80dvh;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(0.9);
+}
+
+.TT_mobileCase_screen_container{
+  height: 70dvh;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  
+ 
+}
+
+.screen{
+  height: 70dvh;
+  width: 100%;
+  background-color: var(--white_default);
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.screen h1{
+  background-color: var(--white_default);
+}
+
+.skillSecBody_buttons_part{
+  /* background-color:aquamarine; */
+
+  flex: 1;
+
+  display: flex;
+
+  
+  align-items: center;
+}
+
+.T_buttonPart_partion_line{
+  height: 90%;
+  border: 2px outset white;
+  margin-left: 10px;
+}
+
+.T_buttonPart_button_container{
+  width: 80%;
+  height: 90%;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  grid-template-rows: repeat(6, auto); /* 6 rows for vertical alignment */
+  grid-auto-flow: column; /* Fills items in the column direction first */
+  gap: 20px; /* Adds spacing between the buttons */
+}
+.T_buttonPart_button_container button{
+  color: var(--white_default);
+  border: 2px outset white;
+  border-radius: 50px;
+
+  padding: 15px;
+  margin-left: 20px;
+
+  font-family: var(--font_style);
+}
 
 
 
@@ -351,6 +486,53 @@ strong{
     .homeSecBody_split_layout1{
       flex:1;
     }
+
+    .skill_sec{
+      height: 110dvh;
+    }
+
+    .skillSec_body{
+      flex-direction: column;
+      height: 100dvh;
+    }
+
+    .skillSecBody_buttons_part{
+      /* display: none; */
+      flex: 1;
+      justify-content: center;
+      align-items: start;
+    }
+    
+
+    .skillSecBody_mobile_part{
+      justify-content: center;
+      /* margin-right: 0; */
+      flex: 2;
+      
+    }
+
+    .T_buttonPart_partion_line{
+      display: none;
+    }
+
+    .T_buttonPart_button_container{
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2); 
+      grid-auto-flow: row; 
+      gap: 1px; 
+      /* border: 2px outset gold; */
+
+      width: 100%;
+    }
+
+    .T_buttonPart_button_container button{
+      padding: 10px;
+      transform: scale(.8);
+
+      margin-left: 0;
+      
+    }
+
  }
 
  @media screen and (max-width:760px) {

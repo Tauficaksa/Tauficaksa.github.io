@@ -315,7 +315,7 @@ strong{
 /*------start of skill sec -----------*/
 
 .skill_sec{
-  border: 2px outset white;
+  /* border: 2px outset white; */
   margin-left: 5%;
   margin-right: 5%;
   height: 100dvh;
@@ -391,22 +391,9 @@ strong{
  
 }
 
-.screen{
-  height: 70dvh;
-  width: 100%;
-  background-color: var(--white_default);
-  color: black;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
- 
-}
 
-.screen h1{
-  background-color: var(--white_default);
-}
 
 .skillSecBody_buttons_part{
   /* background-color:aquamarine; */
@@ -438,13 +425,120 @@ strong{
 .T_buttonPart_button_container button{
   color: var(--white_default);
   border: 2px outset white;
-  border-radius: 50px;
+  border-radius: 30px;
 
   padding: 15px;
   margin-left: 20px;
 
   font-family: var(--font_style);
+
+  transition: all .5s ease;
 }
+
+.T_buttonPart_button_container button:hover{
+  /* transform: scale(1.1); */
+  background-color: var(--green_decorator);
+  border: none;
+  color: black;
+  border-radius: 2px;
+}
+
+/*----mobile screens code */
+
+.screen{
+  height: 70dvh;
+  width: 100%;
+  /* background-color: var(--white_default);  */
+  background: linear-gradient(to top, #003300, #000000);
+  
+}
+
+/* sreen1 home page */
+
+.TTTT_screen_content_headder{
+  
+  background-color: black;
+  height: 8dvh;
+  display: flex;
+  align-items: center;
+}
+
+.TTTT_screen_content_headder h1{
+  font-size: 20px ;
+  font-family: var(--font_style);
+  font-weight: 100;
+  color: var(--white_default);
+
+  margin-left: 5px;
+}
+
+.TTTT_screen_content_headder strong{
+  color: var(--green_decorator);
+  font-weight: 100;
+  /* color: white; */
+}
+
+.TTTT_screen_content_body  {
+
+  /* background-color: var(--white_default); */
+  background-color: transparent;
+
+  
+  color: white;
+  height: 62dvh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.TTTT_screen_content_body ul{
+  /* background-color: var(--white_default); */
+  background-color: transparent;
+
+  
+
+}
+
+.TTTT_screen_content_body li{
+  /* background-color: var(--white_default); */
+  background-color: transparent;
+
+  font-family: var(--font_style);
+
+  padding: 15px;
+  
+  transition: all .5s ease;
+}
+
+.TTTT_screen_content_body li:hover{
+  background-color: var(--green_decorator);
+  transform: scale(1.2);
+  border-radius: 5px;
+  border: 1px outset black;
+}
+
+.home_screen{
+  flex-direction: column;
+}
+
+.home_screen p{
+  background-color: transparent;
+  font-family: var(--font_style);
+}
+
+.home_screen :first-child{
+  margin-left: 25px;
+}
+
+
+.tools_screen li{
+  padding:10px ;
+}
+
+
 
 
 
